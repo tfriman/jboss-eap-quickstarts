@@ -628,7 +628,7 @@
                 <!-- No HTTPS configuration discovered -->
                 <host name="default-host" alias="localhost">
                     <location name="/" handler="welcome-content"/>
-                    <access-log pattern="%t %{i,X-Forwarded-For} %h %H %m %U %q %r %s %T %I %b" use-server-log="true" predicate="not path-suffix(*.jsf) and not path-suffix(*.png)"/>
+                    <access-log pattern="%t %{i,X-Forwarded-For} %h %H %m %U %q %r %s %T %I %b" use-server-log="true" predicate="not path-suffix(.png)"/>
                     <filter-ref name="server-header"/>
                     <filter-ref name="x-powered-by-header"/>
                     <http-invoker security-realm="ApplicationRealm"/>
