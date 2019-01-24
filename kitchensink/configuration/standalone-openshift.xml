@@ -103,11 +103,6 @@
             <logger category="sun.rmi">
                 <level name="WARN"/>
             </logger>
-            <logger category="io.undertow.accesslog">
-                <handlers>
-                    <handler name="CONSOLE"/>
-                </handlers>
-            </logger>
             <root-logger>
                 <level name="INFO"/>
                 <handlers>
